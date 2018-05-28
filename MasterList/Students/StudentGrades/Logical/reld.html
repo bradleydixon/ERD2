@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>StudentGrades Data (Logical Design)</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+StudentGrades Data (Logical Design)
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="rell.html">List of relationships</a></div>
+<div class="activetab">Relationship details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMAEStudent"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMAEStudent</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMAEStudent</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMAEStudent (SKAEStudentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAEStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMAEStudentDescription"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMAEStudentDescription</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMAEStudentDescription</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMAEStudentDescription (SKAEStudentDescriptionId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAEStudentDescription)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMAEStudentResultId"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMAEStudentResultId</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMAEStudentResultId</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMAEStudentResultId (SKAEStudentResultId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAEStudentResultId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMCampus"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMCampus</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMCampus</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCampus (SKCampus)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKCampus)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMCourseEffort"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMCourseEffort</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMCourseEffort</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCourseGrade (SKCourseGradeId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAECourseEffort)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMCourseGrade"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMCourseGrade</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMCourseGrade</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCourseGrade (SKCourseGradeId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAECourseGrade)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMReportingPeriod"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMReportingPeriod</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMReportingPeriod</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMReportingPeriod (SKReportingPeriod)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKReportingPeriod)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMStudent"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMStudent</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMStudent</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMStudent (SKStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMStudentClass"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMStudentClass</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMStudentClass</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMStudentClass (SKStudentClassId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKStudentClass)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMSubCourseEffort"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMSubCourseEffort</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMSubCourseEffort</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCourseGrade (SKCourseGradeId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAESubCourseEffort)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMSubCourseGrade"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMSubCourseGrade</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMSubCourseGrade</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCourseGrade (SKCourseGradeId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAESubCourseGrade)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMSubjectCourse"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMSubjectCourse</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMSubjectCourse</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMAESubjectCourse (SKAESubjectCourseId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAECourse)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMSubjectSubCourse"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMSubjectSubCourse</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMSubjectSubCourse</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMAESubjectCourse (SKAESubjectCourseId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKAESubCourse)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMYear"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMYear</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMYear</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCalendarYear (SkYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactStudentAEResult_DMYearLevel"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactStudentAEResult_DMYearLevel</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactStudentAEResult_DMYearLevel</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMYearLevel (SKYearLevel)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactStudentAEResult (SKYearLevel)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+</td>
+</tr>
+</table>
+</body>
+</html>

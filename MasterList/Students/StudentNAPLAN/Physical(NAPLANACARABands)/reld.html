@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>NAPLANACARABands Data (Physical Design)</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+NAPLANACARABands Data (Physical Design)
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Tables</a></li>
+<li><a href="attrl.html">Columns</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="rell.html">List of relationships</a></div>
+<div class="activetab">Relationship details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMCampus"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMCampus</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMCampus</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCampus (SKCampus)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKCampus)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMNAPLANAnswer"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMNAPLANAnswer</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMNAPLANAnswer</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANAnswer (SKNAPLANAnswerId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKCorrectAnswer)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMNAPLANQuestion"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMNAPLANQuestion</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMNAPLANQuestion</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANQuestion (SKNAPLANQuestionId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKNAPLANQuestionId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMNAPLANResponse"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMNAPLANResponse</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMNAPLANResponse</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANAnswer (SKNAPLANAnswerId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKNAPLANResponse)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMNAPLANStudent"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMNAPLANStudent</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMNAPLANStudent</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANStudent (SkNaplanStudentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKNAPLANStudentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMNAPLANStudentResponseId"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMNAPLANStudentResponseId</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMNAPLANStudentResponseId</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANStudentResponseId (SKNAPLANStudentResponseId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKNAPLANStudentResponseId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMNAPLANTextResponse"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMNAPLANTextResponse</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMNAPLANTextResponse</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANTextResponse (SKNAPLANTextResponse)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKNAPLANTextResponse)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMStudent"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMStudent</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMStudent</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMStudent (SKStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMYear"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMYear</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMYear</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCalendarYear (SkYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_DMYearLevel"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_DMYearLevel</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_DMYearLevel</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMYearLevel (SKYearLevel)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKYearLevel)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNAPLANStudentResponse_NAPLANAssessment"></A>
+<div class="objectname">Relationship: FK_DMFactNAPLANStudentResponse_NAPLANAssessment</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNAPLANStudentResponse_NAPLANAssessment</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANAssessmentArea (SKNaplanAssessmentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANStudentResponse (SKNAPLANAssessmentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNaplanStudentYearResult_DMNAPLAN"></A>
+<div class="objectname">Relationship: FK_DMFactNaplanStudentYearResult_DMNAPLAN</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNaplanStudentYearResult_DMNAPLAN</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLAN (SKNaplanResultId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SKNaplanResultId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNaplanStudentYearResult_DMNAPLANACARAAggregate"></A>
+<div class="objectname">Relationship: FK_DMFactNaplanStudentYearResult_DMNAPLANACARAAggregate</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNaplanStudentYearResult_DMNAPLANACARAAggregate</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANACARAAggregate (SkNAPLANACARAAggregateId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkNAPLANACARAAggregateId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMFactNaplanStudentYearResult_DMNaplanSourceID"></A>
+<div class="objectname">Relationship: FK_DMFactNaplanStudentYearResult_DMNaplanSourceID</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMFactNaplanStudentYearResult_DMNaplanSourceID</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNaplanSourceID (SKNaplanSourceId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SKNaplanSourceId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_DMNAPLANQuestion_SKNAPLANQuestionMaterial"></A>
+<div class="objectname">Relationship: FK_DMNAPLANQuestion_SKNAPLANQuestionMaterial</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_DMNAPLANQuestion_SKNAPLANQuestionMaterial</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANQuestionMaterial (SKNAPLANQuestionMaterial)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMNAPLANQuestion (SKNAPLANQuestionMaterial)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_ODSFactNaplanStudentYearResult_ODSCalendarYear"></A>
+<div class="objectname">Relationship: FK_ODSFactNaplanStudentYearResult_ODSCalendarYear</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_ODSFactNaplanStudentYearResult_ODSCalendarYear</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCalendarYear (SkYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_ODSFactNaplanStudentYearResult_ODSCampus"></A>
+<div class="objectname">Relationship: FK_ODSFactNaplanStudentYearResult_ODSCampus</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_ODSFactNaplanStudentYearResult_ODSCampus</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCampus (SKCampus)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkCampus)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_ODSFactNaplanStudentYearResult_ODSExamBands"></A>
+<div class="objectname">Relationship: FK_ODSFactNaplanStudentYearResult_ODSExamBands</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_ODSFactNaplanStudentYearResult_ODSExamBands</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMExamBands (SKExamBandId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkExamBandId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_ODSFactNaplanStudentYearResult_ODSNaplanAssessmentArea"></A>
+<div class="objectname">Relationship: FK_ODSFactNaplanStudentYearResult_ODSNaplanAssessmentArea</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_ODSFactNaplanStudentYearResult_ODSNaplanAssessmentArea</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANAssessmentArea (SKNaplanAssessmentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkNaplanAssessmentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_ODSFactNaplanStudentYearResult_ODSNaplanStudent"></A>
+<div class="objectname">Relationship: FK_ODSFactNaplanStudentYearResult_ODSNaplanStudent</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_ODSFactNaplanStudentYearResult_ODSNaplanStudent</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANStudent (SkNaplanStudentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkNaplanStudentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_ODSFactNaplanStudentYearResult_ODSStudent"></A>
+<div class="objectname">Relationship: FK_ODSFactNaplanStudentYearResult_ODSStudent</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_ODSFactNaplanStudentYearResult_ODSStudent</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMStudent (SKStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNaplanStudentYearResult (SkStudent)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactNAPLANACARABands_SKExamBandId"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactNAPLANACARABands_SKExamBandId</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactNAPLANACARABands_SKExamBandId</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMExamBands (SKExamBandId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANACARABands (SKExamBandId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactNAPLANACARABands_SKNaplanAssesmentId"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactNAPLANACARABands_SKNaplanAssesmentId</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactNAPLANACARABands_SKNaplanAssesmentId</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMNAPLANAssessmentArea (SKNaplanAssessmentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANACARABands (SKNaplanAssesmentId)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactNAPLANACARABands_SKStateTerritory"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactNAPLANACARABands_SKStateTerritory</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactNAPLANACARABands_SKStateTerritory</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMStateTerritory (SKStateTerritory)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANACARABands (SKStateTerritory)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactNAPLANACARABands_SKYear"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactNAPLANACARABands_SKYear</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactNAPLANACARABands_SKYear</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMCalendarYear (SkYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANACARABands (SKYear)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="FK_StlPer_DMFactNAPLANACARABands_SKYearLevel"></A>
+<div class="objectname">Relationship: FK_StlPer_DMFactNAPLANACARABands_SKYearLevel</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">FK_StlPer_DMFactNAPLANACARABands_SKYearLevel</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Relationship type</td><td valign="top" class="fielddata">Non Identifying</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Cardinality</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Parent with columns</td><td valign="top" class="fielddata">DMYearLevel (SKYearLevel)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Child with columns</td><td valign="top" class="fielddata">DMFactNAPLANACARABands (SKYearLevel)</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Update rule</td><td valign="top" class="fielddata">None</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Delete rule</td><td valign="top" class="fielddata">None</td></tr>
+</table>
+<BR>
+<BR>
+</td>
+</tr>
+</table>
+</body>
+</html>

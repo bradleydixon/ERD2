@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>MySchools Data (Logical Design)</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+MySchools Data (Logical Design)
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="activetab">List of entities</div>
+<div class="tab"><a href="entd.html">Entity details</a></div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "24%" class="fieldname">Primary key constraint name</td><td valign="top" width= "10%" class="fieldname">Number of columns</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMCalendarYear">DMCalendarYear</A></td><td valign="top" class="fielddata">PK_ComCom_DMCalendarYear_SkYear</td><td valign="top" class="fielddata">16</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMCampus">DMCampus</A></td><td valign="top" class="fielddata">PK_ComCom_DMCampus_SKCampus</td><td valign="top" class="fielddata">84</td><td valign="top" class="fielddata">This is a static table and does not need to be populated.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsAttendance">DMFactMySchoolsAttendance</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsAttendance_SKMySchoolsAttendance</td><td valign="top" class="fielddata">17</td><td valign="top" class="fielddata">This MySchools table details attendance rates and levels for each school campus and calendar year/school term.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsEnrolmentsByGrade">DMFactMySchoolsEnrolmentsByGrade</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsEnrolmentsByGrade_SKMySchoolsEnrolmentsByGrade</td><td valign="top" class="fielddata">12</td><td valign="top" class="fielddata">This MySchools table details full time student enrolment numbers by year level (e.g Year 3),  calendar year and school campus.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsFinance">DMFactMySchoolsFinance</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsFinance_SKMySchoolsFinance</td><td valign="top" class="fielddata">37</td><td valign="top" class="fielddata">This MySchools table details financial information for each school campus and calendar year.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsNAPLANResults">DMFactMySchoolsNAPLANResults</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsNAPLANResults_SKMySchoolsNAPLANResults</td><td valign="top" class="fielddata">36</td><td valign="top" class="fielddata">This MySchools table presents summary NAPLAN results for each school campus and calendar year,  broken down by domain (e.g Numeracy) and year level (e.g. Year 3).</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsNAPLANResultsSimilarSchools">DMFactMySchoolsNAPLANResultsSimilarSchools</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsNAPLANResultsSimilarSchools_SKMySchoolsNAPLANResultsSimilarSchools</td><td valign="top" class="fielddata">25</td><td valign="top" class="fielddata">This MySchools table presents summary NAPLAN results for similar schools for each school campus and calendar year,  broken down by domain (e.g Numeracy) and year level (e.g. Year 3).</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsProfile">DMFactMySchoolsProfile</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsProfile_SKMySchoolsProfile</td><td valign="top" class="fielddata">24</td><td valign="top" class="fielddata">This MySchools table details school profile information for each school campus and calendar year.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsSeniorOutcomes">DMFactMySchoolsSeniorOutcomes</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsSeniorOutcomes_SKMySchoolsSeniorOutcomes</td><td valign="top" class="fielddata">15</td><td valign="top" class="fielddata">This MySchools table details school senior outcomes information for each school campus and calendar year.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsStudentGain">DMFactMySchoolsStudentGain</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsStudentGain_SKMySchoolsStudentGain</td><td valign="top" class="fielddata">20</td><td valign="top" class="fielddata">This MySchools table presents average NAPLAN gain results for the specified school campus,  domain (e.g Numeracy) and gain group (e.g Students transitioning from Year 3 to Year 5 from 2014 -2016). Refer to https://myschool.edu.au/school/49534/naplan/studentgain</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsStudentGainSameStartingScore">DMFactMySchoolsStudentGainSameStartingScore</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsStudentGainSameStartingScore_SKMySchoolsStudentGainSameStartingScore</td><td valign="top" class="fielddata">19</td><td valign="top" class="fielddata">This MySchools table presents average NAPLAN gain results for students with the same starting score as students in the selected school,  and having the same domain (e.g Numeracy) and gain group (e.g Students transitioning from Year 3 to Year 5 from 2014 -2016). Refer to https://myschool.edu.au/school/49534/naplan/studentgain</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsStudentGainSimilarSchools">DMFactMySchoolsStudentGainSimilarSchools</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsStudentGainSimilarSchools_SKMySchoolsStudentGainSimilarSchools</td><td valign="top" class="fielddata">19</td><td valign="top" class="fielddata">This MySchools table presents average NAPLAN gain results for similar schools as the selected school,  having the same domain (e.g Numeracy) and gain group (e.g Students transitioning from Year 3 to Year 5 from 2014 -2016). Refer to https://myschool.edu.au/school/49534/naplan/studentgain</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsVETInSchools">DMFactMySchoolsVETInSchools</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsVETInSchools_SKMySchoolsVETInSchools</td><td valign="top" class="fielddata">19</td><td valign="top" class="fielddata">This MySchools table presents VET Course headcounts for each school campus and calendar year,  broken down by VET Category and VET Status.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMFactMySchoolsVETSchoolBasedApprenticeshipsTraineeships">DMFactMySchoolsVETSchoolBasedApprenticeshipsTraineeships</A></td><td valign="top" class="fielddata">PK_ACARA_DMFactMySchoolsVETSchoolBasedApprenticeshipsTraineeships_SKMySchoolsVETSchoolBasedApprenticeshipsTraineeships</td><td valign="top" class="fielddata">11</td><td valign="top" class="fielddata">This MySchools table presents VET student headcounts for each school campus and calendar year.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMMySchoolsStudentGainGroup">DMMySchoolsStudentGainGroup</A></td><td valign="top" class="fielddata">PK_ACARA_DMMySchoolsStudentGainGroup_SKStudentGainGroup</td><td valign="top" class="fielddata">13</td><td valign="top" class="fielddata">This MySchools table is a dimension representing a gain group. A gain group defines a grade range and calendar year range combination</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMMySchoolsVETClassification">DMMySchoolsVETClassification</A></td><td valign="top" class="fielddata">PK_ACARA_DMMySchoolsVETClassification_SKVETClassification</td><td valign="top" class="fielddata">13</td><td valign="top" class="fielddata">This MySchools table is a dimension for VET Classification (two levels).</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMMySchoolsVETStatus">DMMySchoolsVETStatus</A></td><td valign="top" class="fielddata">PK_ACARA_DMMySchoolsVETStatus_SKVETStatus</td><td valign="top" class="fielddata">12</td><td valign="top" class="fielddata">This MySchools table is a dimension for VET Status.</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMNAPLANAssessmentArea">DMNAPLANAssessmentArea</A></td><td valign="top" class="fielddata">PK_StlPer_DMNAPLANAssessmentArea_SKNaplanAssessmentId</td><td valign="top" class="fielddata">13</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMSchoolTerm">DMSchoolTerm</A></td><td valign="top" class="fielddata">PK_ComCom_DMSchoolTerm_SKSchoolTerm</td><td valign="top" class="fielddata">12</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="entd.html#DMYearLevel">DMYearLevel</A></td><td valign="top" class="fielddata">PK_StlCom_DMYearLevel_SKYearLevel</td><td valign="top" class="fielddata">14</td><td valign="top" class="fielddata">This is a static table and does not need to be populated.</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

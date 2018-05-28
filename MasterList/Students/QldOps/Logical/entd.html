@@ -1,0 +1,1030 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>QldOps Data (Logical Design)</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+QldOps Data (Logical Design)
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="entl.html">List of entities</a></div>
+<div class="activetab">Entity details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="DMATSI"></A>
+<div class="objectname">Entity: DMATSI</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_ComCom_DMATSI_SKAtsi</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">This is a static table and does not need to be populated.</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKAtsi</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a surrogate key.</td></tr>
+<tr><td valign="top" class="fielddata">BKAtsiId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">Aboriginal/Torres straight Islander as per code set in static values database. This forms the business key</td></tr>
+<tr><td valign="top" class="fielddata">AtsiSifId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(15)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the id as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">ATSISifDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the description as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">AtsiGroup</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting group label.</td></tr>
+<tr><td valign="top" class="fielddata">AtsiShortDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a short description that is report friendly</td></tr>
+<tr><td valign="top" class="fielddata">BusinessDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a configurable business description. This can be specific to each diocese.</td></tr>
+<tr><td valign="top" class="fielddata">PrimarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">SecondarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was created</td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was last updated for SCD2 expiry etc</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this record becomes effective for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the date that this record expires for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">IsCurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This indicates if this is the latest record for this business key under SCD2 types.</td></tr>
+<tr><td valign="top" class="fielddata">ScdReason</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the reason (if applicable) that this row was created.</td></tr>
+<tr><td valign="top" class="fielddata">ATSIBinaryStatus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (IsCurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKAtsi)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKAtsiId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (AtsiSifId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (ATSISifDesc)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">AK_ATSI_ATSISifDesc_IsUnique</td><td valign="top" class="fielddata">Unique</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">UNIQUE (ATSISifDesc)</td></tr>
+<tr><td valign="top" class="fielddata">AK_ATSI_ATSISifId_IsUnique</td><td valign="top" class="fielddata">Unique</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">UNIQUE (AtsiSifId)</td></tr>
+<tr><td valign="top" class="fielddata">PK_ComCom_DMATSI_SKAtsi</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKAtsi)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMCalendarYear"></A>
+<div class="objectname">Entity: DMCalendarYear</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_ComCom_DMCalendarYear_SkYear</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SkYear</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the surrogate key</td></tr>
+<tr><td valign="top" class="fielddata">Year</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the year in YYYY format</td></tr>
+<tr><td valign="top" class="fielddata">ShortYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(25)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the short year in YY format</td></tr>
+<tr><td valign="top" class="fielddata">YearName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the year name in textual format</td></tr>
+<tr><td valign="top" class="fielddata">prevyear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the previous year in YYYY format</td></tr>
+<tr><td valign="top" class="fielddata">nextyear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is next year in YYYY format</td></tr>
+<tr><td valign="top" class="fielddata">BusinessDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a business description for the year</td></tr>
+<tr><td valign="top" class="fielddata">PrimarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">SecondarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was created</td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was last updated for SCD2 expiry etc</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this record becomes effective for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the date that this record expires for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">IsCurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This indicates if this is the latest record for this business key under SCD2 types.</td></tr>
+<tr><td valign="top" class="fielddata">FirstDayOfYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date of the first day of the year</td></tr>
+<tr><td valign="top" class="fielddata">LastDayOfYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date of the last day of the year</td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubjectQCS_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMSchoolSubjectQCS</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubject_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMSchoolSubject</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchools_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMSchools</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentOutcomes_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMStudentOutcomes</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentSubjects_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMStudentSubjects</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastDayOfYear)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SkYear)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (FirstDayOfYear)</td></tr>
+<tr><td valign="top" class="fielddata">PK_ComCom_DMCalendarYear_SkYear</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SkYear)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMCampus"></A>
+<div class="objectname">Entity: DMCampus</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_ComCom_DMCampus_SKCampus</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">This is a static table and does not need to be populated.</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the surrogate key for a campus</td></tr>
+<tr><td valign="top" class="fielddata">BKCampusId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a unique id for a campus coming from the static value database. If this is the only campus of a given school the school id and campus id should be the same</td></tr>
+<tr><td valign="top" class="fielddata">SchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a unique if for a school coming from the static value database. if the school only has one campus it is envisioned this is the same as the campus id</td></tr>
+<tr><td valign="top" class="fielddata">SchoolName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">School name</td></tr>
+<tr><td valign="top" class="fielddata">DioceseId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the Diocese table in the static values database. IT is used for referential integrity accross the CED3 datawarehouse. This value represents 1 diocese</td></tr>
+<tr><td valign="top" class="fielddata">DioceseName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the name of the diocese</td></tr>
+<tr><td valign="top" class="fielddata">CongregationId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the id to represent a congregation,  typically when a school is not systemic</td></tr>
+<tr><td valign="top" class="fielddata">CongregationName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the name of the congregation for this congregation id </td></tr>
+<tr><td valign="top" class="fielddata">IsSystemic</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a flag to show if the school is systemic or not</td></tr>
+<tr><td valign="top" class="fielddata">CampusName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the name that is related to the Campus id,  this should be returned as well when the lookup for school id is completed</td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressStreet</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(250)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the MCEETYA campus mapping,  the field is l_addr_1. </td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressSuburb</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the MCEETYA campus mapping,  the field is l_addr_2.</td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressPostCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(5)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the MCEETYA campus mapping,  the field is l_pcode. </td></tr>
+<tr><td valign="top" class="fielddata">BKCampusAddressState</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the MCEETYA campus mapping,  the field is stateid. This field is the state abbreviation</td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressState</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the MCEETYA campus mapping,  the field is stateid. This field is the state abbreviation</td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressGeoData</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">GEOGRAPHY</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">Geo data that is representative of where the campus is located</td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressLongitude</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(9, 6)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">Campus longitude as a decimal</td></tr>
+<tr><td valign="top" class="fielddata">CampusAddressLatitude</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(9, 6)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">Campus latitude as a decimal</td></tr>
+<tr><td valign="top" class="fielddata">SocioEconomicStatus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a value that is given by ICSEA every four years. comes from deewr and is known as a SES number</td></tr>
+<tr><td valign="top" class="fielddata">ICSEACode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the ICSEA number from ACARA</td></tr>
+<tr><td valign="top" class="fielddata">CampusEmail</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(256)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a generic email for the campus</td></tr>
+<tr><td valign="top" class="fielddata">CampusPrincipalEmail</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(256)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a generic email for the principal of the campus. This is intended to be a static alias for the principal as a logical position rather than a specific individual</td></tr>
+<tr><td valign="top" class="fielddata">CampusSchoolLevelId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the SIF school level code set that dicates if a school is primary/secondary/combines etc. This value can be looked up in the static values database</td></tr>
+<tr><td valign="top" class="fielddata">CampusSchoolLevelSifCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(20)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the id as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">CampusSchoolLevelSifDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the description as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">CampusSchoolSubTypeId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the school sub type code reference</td></tr>
+<tr><td valign="top" class="fielddata">CampusSchoolSubTypeDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(25)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the school sub type code reference</td></tr>
+<tr><td valign="top" class="fielddata">CoEdStatusId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is a value from the static values database. It is derived from SIF School Co-Ed Status code set. This data represents if a school is girl/boy/co-educational</td></tr>
+<tr><td valign="top" class="fielddata">CoEdStatusSifDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(20)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the description as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">CampusFocusCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a link to the reference from SIF for School Focus Code. The intention is that the schools flagged here are special in nature. for example a Trade school would use the vocational code.</td></tr>
+<tr><td valign="top" class="fielddata">CampusRegion</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is configurable so diocese can group schools/campus</td></tr>
+<tr><td valign="top" class="fielddata">CampusCluster</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is configurable so diocese can group schools/campus</td></tr>
+<tr><td valign="top" class="fielddata">PrimarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">SecondarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was created</td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was last updated for SCD2 expiry etc</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this record becomes effective for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the date that this record expires for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">IsCurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This indicates if this is the latest record for this business key under SCD2 types.</td></tr>
+<tr><td valign="top" class="fielddata">ScdReason</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the reason (if applicable) that this row was created.</td></tr>
+<tr><td valign="top" class="fielddata">CampusSuburbAndName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolSuburbAndName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressStreet</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(250)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressSuburb</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressPostCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressState</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressGeoData</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">GEOGRAPHY</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressLongitude</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(9, 6)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolAddressLatitude</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(9, 6)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolRegion</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolCluster</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Website</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BoardingStatus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Cohorts</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CoEdStatusSifCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(2)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CampusPhone</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(12)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolPhone</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(12)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">DateCampusOpened</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">DateCampusClosed</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IsCampusOpen</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">DateSchoolOpened</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">DateSchoolClosed</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IsSchoolOpen</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CampusStateCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StatisticalArea1</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NameofStatisticalArea1</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StatisticalArea2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NameofStatisticalArea2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StatisticalArea3</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NameofStatisticalArea3</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StatisticalArea4</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NameofStatisticalArea4</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">ABSRemotenessArea</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Geolocation</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolURL</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">AcaraSchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">HeadCampusAcaraId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SchoolSector</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CampusType</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">RolledReportingDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NESASchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CompassSchoolURL</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CompassSchoolName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CompassAPIKey</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_GovCen_DMStudentVetUnits_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentVetUnits</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubjectQCS_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMSchoolSubjectQCS</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubject_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMSchoolSubject</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchools_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMSchools</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentOutcomes_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentOutcomes</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentSubjects_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentSubjects</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentVetCourses_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentVetCourses</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentVetUnits_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentVetUnits</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Indexes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "25%" class="fieldname">Name</td><td valign="top" width= "50%" class="fieldname">Index columns</td><td valign="top" width= "25%" class="fieldname">Index type</td></tr>
+<tr><td valign="top" class="fielddata">NCCIX_COMCOM_DMCampus_SKCampus</td><td valign="top" class="fielddata">IsSystemic ASC,  DioceseName ASC</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NCCSIX_ComCom_DMCampus_SKCampus</td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NCIX_ComCom_DMCampus_DioceseCampusId</td><td valign="top" class="fielddata">SKCampus ASC,  BKCampusId ASC,  DioceseId ASC</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NCIX_ComCom_DMCampus_SKCampus</td><td valign="top" class="fielddata">SKCampus ASC</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CoEdStatusSifCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKCampusId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SchoolId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SchoolName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (DioceseId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (DioceseName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CongregationId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CongregationName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (IsSystemic)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusAddressStreet)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusAddressSuburb)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusAddressPostCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKCampusAddressState)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusAddressState)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusSchoolLevelId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusSchoolLevelSifCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusSchoolLevelSifDesc)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusSchoolSubTypeId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CampusSchoolSubTypeDesc)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CoEdStatusId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CoEdStatusSifDesc)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (IsCurrent)</td></tr>
+<tr><td valign="top" class="fielddata">PK_ComCom_DMCampus_SKCampus</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKCampus)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMGender"></A>
+<div class="objectname">Entity: DMGender</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_ComCom_DMGender_SKGenderId</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">This is a static table and does not need to be populated.</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKGenderId</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">Gender</td></tr>
+<tr><td valign="top" class="fielddata">BKGenderId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">Business key for gender</td></tr>
+<tr><td valign="top" class="fielddata">GenderSifCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(15)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the id as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">GenderSifDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the description as per SIF codes</td></tr>
+<tr><td valign="top" class="fielddata">PrimarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">SecondarySort</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is a reporting sort column. This can be specific to each diocese</td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was created</td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this row was last updated for SCD2 expiry etc</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This is the date that this record becomes effective for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the date that this record expires for SCD2 types</td></tr>
+<tr><td valign="top" class="fielddata">IsCurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">This indicates if this is the latest record for this business key under SCD2 types.</td></tr>
+<tr><td valign="top" class="fielddata">ScdReason</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(200)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">This is the reason (if applicable) that this row was created.</td></tr>
+<tr><td valign="top" class="fielddata">BusinessDesc</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">GenderGroup</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (IsCurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKGenderId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKGenderId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (GenderSifCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (GenderSifDesc)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">AK_Gender_GenderSifCode_IsUnique</td><td valign="top" class="fielddata">Unique</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">UNIQUE (GenderSifCode)</td></tr>
+<tr><td valign="top" class="fielddata">AK_Gender_GenderSifDesc_IsUnique</td><td valign="top" class="fielddata">Unique</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">UNIQUE (GenderSifDesc)</td></tr>
+<tr><td valign="top" class="fielddata">PK_ComCom_DMGender_SKGenderId</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKGenderId)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMOPStateStats"></A>
+<div class="objectname">Entity: DMOPStateStats</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMOPStateStats_OPStateStatsID</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">OPStateStatsID</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CalendarYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">School</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Locality</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SEP</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Senior_Statement_only</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PCT_with_QCE_VET_SAT_IBD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PCT_QTAC_applicants_with_tertiary_offer</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_VET_Dip_or_Adv_Dip</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_uni_subject_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE_VET_Dip_or_Adv_Dip_unit_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_VET_Dip_or_AdvDip</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_uni_subject_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">not_yet_QCE_VET_Dip_or_AdvDip_unit_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_QCE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_VET_Dip_or_AdvDip</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_uni_subject_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP_VET_Dip_or_AdvDip_unit_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_QCE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_VET_Dip_or_AdvDip</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_uni_subject_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPinelig_VET_Dip_or_AdvDip_unit_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP1_5</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP6_10</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP11_15</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP16_20</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP21_25</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_QCE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_VET_Dip_or_AdvDip</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_uni_subject_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD_VET_Dip_or_AdvDip_unit_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_N</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_QCE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_VET_Dip_or_AdvDip</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_uni_subject_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">notIBD_VET_Dip_or_AdvDip_unit_at_school</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD45_41</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD40_36</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD35_31</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD30_24</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OPStateStatsID)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMOPStateStats_OPStateStatsID</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (OPStateStatsID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMSchools"></A>
+<div class="objectname">Entity: DMSchools</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMSchools_SKSchools</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKSchools</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKSchools</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CoEdStatus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(10)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Sector</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">District</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Size</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(20)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VisaSchool</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VisaSubjects</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">TotalSubjects</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">AuthoritySubjects</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsTotal</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsFemale</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsMale</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsEligible</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsEquivalent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsExternal</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsQCS</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMean</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedian</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanC</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianC</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PolyScoreMean</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PolyScoreMeanDeviation</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EquivalentSchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchools_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMSchools</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchools_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMSchools</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKSchools)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKSchools)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKYear)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CoEdStatus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Sector)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (District)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Size)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VisaSchool)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VisaSubjects)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (TotalSubjects)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (AuthoritySubjects)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsTotal)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsFemale)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsMale)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsEligible)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsEquivalent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsExternal)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentsQCS)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMean)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMedian)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMeanA)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMedianA)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMeanB)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMedianB)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMeanC)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMedianC)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMeanD)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMedianD)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMeanE)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCSMedianE)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (PolyScoreMean)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (PolyScoreMeanDeviation)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchools_DMCalendarYear</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKYear) REFERENCES DMCalendarYear(SkYear)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchools_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMSchools_SKSchools</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKSchools)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMSchoolSubject"></A>
+<div class="objectname">Entity: DMSchoolSubject</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMSchoolSubject_SKSchoolSubject</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKSchoolSubject</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKSchoolSubject</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Size</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Authority</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">External</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Visa</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsTotal</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsFemale</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsMale</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsEligible</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsEquivalent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsExternal</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentsQCS</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMean</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedian</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanC</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianC</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMeanE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSMedianE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMean</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMedian</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMeanA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMedianA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMeanB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMedianB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMeanC</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMedianC</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMeanD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMedianD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMeanE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAIMedianE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PolyScoreMean</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PolyScoreMeanDeviation</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubject_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMSchoolSubject</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubject_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMSchoolSubject</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKSchoolSubject)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKSchoolSubject)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubject_DMCalendarYear</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKYear) REFERENCES DMCalendarYear(SkYear)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubject_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMSchoolSubject_SKSchoolSubject</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKSchoolSubject)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMSchoolSubjectQCS"></A>
+<div class="objectname">Entity: DMSchoolSubjectQCS</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMSchoolSubjectQCS_SKSchoolSubjectQCS</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKSchoolSubjectQCS</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKSchoolSubjectQCS</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentGroup</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectTest</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Mean</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Median</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StandardDeviation</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Max</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">MIN</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NScore</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">PrintOrder</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Eligibility</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EquivalentSchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubjectQCS_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMSchoolSubjectQCS</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubjectQCS_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMSchoolSubjectQCS</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKSchoolSubjectQCS)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKSchoolSubjectQCS)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKYear)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SubjectTest)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Mean)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Median)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StandardDeviation)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Max)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (MIN)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (NScore)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (PrintOrder)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Eligibility)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EquivalentSchoolId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubjectQCS_DMCalendarYear</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKYear) REFERENCES DMCalendarYear(SkYear)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMSchoolSubjectQCS_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMSchoolSubjectQCS_SKSchoolSubjectQCS</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKSchoolSubjectQCS)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMStudentOutcomes"></A>
+<div class="objectname">Entity: DMStudentOutcomes</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMStudentOutcomes_SKStudentOutcomes</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKStudentOutcomes</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKStudentOutcomes</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKPersistentStudentId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKATSI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKGender</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VersionNo</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OrgID</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SLIMSLUI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentNumber</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Surname</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">GivenNames</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">DOB</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCEDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIA</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCIADescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VET</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VETDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SAT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SATDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBD</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBDDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBDEligible</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">IBDEligibleDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OP</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPGroupingDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPEligible</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">OPEligibleDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VisaFlag</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VisaFlagDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CertI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CertII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CertIII</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CertIV</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCECredits</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CoreCredits</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Literacy</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LiteracyDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Numeracy</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">NumeracyDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Prep</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Enrichment</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Advanced</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CompletedCore</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VetMod</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">VetModDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Repeat</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">RepeatDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">QCSTestGrade</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(10)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentOutcomes_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMStudentOutcomes</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentOutcomes_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentOutcomes</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKStudentOutcomes)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKStudentOutcomes)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKYear)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKPersistentStudentId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKATSI)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKGender)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VersionNo)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OrgID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SLIMSLUI)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentNumber)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Surname)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (GivenNames)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCE)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCEDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCIA)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCIADescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VET)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VETDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SAT)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SATDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (IBD)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (IBDDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OP)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OPEligible)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OPEligibleDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VisaFlag)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VisaFlagDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CertI)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CertII)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CertIII)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CertIV)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (QCECredits)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Literacy)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Numeracy)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (NumeracyDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Prep)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Enrichment)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Advanced)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VetMod)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (VetModDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (RepeatDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentOutcomes_DMCalendarYear</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKYear) REFERENCES DMCalendarYear(SkYear)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentOutcomes_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMStudentOutcomes_SKStudentOutcomes</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKStudentOutcomes)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMStudentSubjects"></A>
+<div class="objectname">Entity: DMStudentSubjects</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMStudentSubjects_SKStudentSubjects</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKStudentSubjects</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKStudentSubjects</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKYear</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKPersistentStudentId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKStudentOutcomes</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SLIMSLUI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentNumber</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LevelAchievement</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(1)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LevelAchievementDescription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Semester1Unit</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Semester2Unit</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Semester3Unit</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Semester4Unit</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EquivalentSchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentSubjects_DMCalendarYear</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCalendarYear</td><td valign="top" class="fielddata">DMStudentSubjects</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentSubjects_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentSubjects</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKStudentSubjects)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKStudentSubjects)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKYear)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKPersistentStudentId)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKStudentOutcomes)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SubjectName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LevelAchievement)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LevelAchievementDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentSubjects_DMCalendarYear</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKYear) REFERENCES DMCalendarYear(SkYear)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentSubjects_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMStudentSubjects_SKStudentSubjects</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKStudentSubjects)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMStudentVetCourses"></A>
+<div class="objectname">Entity: DMStudentVetCourses</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMStudentVetCourses_SKStudentVetCourses</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKStudentVetCourses</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKStudentVetCourses</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKPersistentStudentid</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SLIMSLUI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentGivenNames</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentLastName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EquivalentSchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentVetCourses_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentVetCourses</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKStudentVetCourses)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKStudentVetCourses)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKPersistentStudentid)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SLIMSLUI)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SubjectCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SubjectName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentGivenNames)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentLastName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentVetCourses_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMStudentVetCourses_SKStudentVetCourses</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKStudentVetCourses)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="DMStudentVetUnits"></A>
+<div class="objectname">Entity: DMStudentVetUnits</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_QLDOP_DMStudentVetUnits_SKStudentVetUnits</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata">SKStudentVetUnits</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">BKStudentVetUnits</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(100)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKCampus</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SKPersistentStudentID</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DECIMAL(18, 3)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SLIMSLUI</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">SubjectName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentLogin</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIGINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentGivenNames</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">StudentLastName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LocCode</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LocName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LocStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LocEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">GRDDEscription</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">GRDDisplayName</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">NVARCHAR(255)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EquivalentSchoolId</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">CreateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">LastUpdateDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveStartDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">EffectiveEndDate</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME2</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata">Iscurrent</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">FK_GovCen_DMStudentVetUnits_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentVetUnits</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentVetUnits_DMCampus</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">DMCampus</td><td valign="top" class="fielddata">DMStudentVetUnits</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Iscurrent)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKStudentVetUnits)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (BKStudentVetUnits)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SKPersistentStudentID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SLIMSLUI)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SubjectCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SubjectName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentGivenNames)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (StudentLastName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LocCode)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LocName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LocStartDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CreateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastUpdateDate)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EffectiveStartDate)</td></tr>
+<tr><td valign="top" class="fielddata">FK_GovCen_DMStudentVetUnits_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">FK_QLDOP_DMStudentVetUnits_DMCampus</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SKCampus) REFERENCES DMCampus(SKCampus)</td></tr>
+<tr><td valign="top" class="fielddata">PK_QLDOP_DMStudentVetUnits_SKStudentVetUnits</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SKStudentVetUnits)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+</td>
+</tr>
+</table>
+</body>
+</html>
